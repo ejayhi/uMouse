@@ -1,0 +1,26 @@
+How To: Set an Environment Variable in Mac OS X
+
+NOTES:
+	- 'launchd' will be avail to all programs on the 
+		system
+	- this approach is for global env variables 
+		only
+	
+	- limitations:
+		- paths cannot reference other paths,
+		- cannot have spaces
+		
+	-/etc/launchd.conf does not exist by default
+	
+	- a reboot is necessary to load the contents
+		of '/etc/launchd.conf'
+		
+PROCEDURE:
+	1. Open up a terminal.
+	2. Do cmd 'sudo vim /etc/launchd.conf'
+	3. Type in the 1st line 'setenv <key> <value>'
+		- <key> is the variable name e.g. PATH
+		- <value> is the path to that variable e.g.
+			/usr/local
+	4. Quit & Save
+	5. Reboot the system  
