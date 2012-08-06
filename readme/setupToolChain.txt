@@ -34,8 +34,7 @@ PROCEDURE:
 				a. 'setenv ARDUINO_DIR /Applications/Arduinio.cpp/
 					Contents/Resources/Java'
 				b. 'setenv ARDMK_DIR /usr/local'
-				c. 'setenv ARDUINO_SKETCHBOOK /Users/foo/Documents
-					/Arduino'
+				c. 'setenv ARDUINO_SKETCHBOOK /Users/foo/dev/uMouse
 		d. Install Perl Modules
 			NOTE: Perl Shell: 'sudo perl -MCPAN -e shell
 			i. sudo perl -MCPAN -e 'install YAML'
