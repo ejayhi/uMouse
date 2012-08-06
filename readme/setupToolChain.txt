@@ -1,0 +1,44 @@
+Setup ToolChain For Arduino Dev
+
+PURPOSE:
+	To be able to build from the terminal using
+	commands like 'make' & 'make install', 'gcc'
+	
+LINKS:
+	- http://www.obdev.at/products/crosspack/index.html
+	- github.com/mjoldfield/Arduino-Makefile
+	- http://triopter.com/archive/how-to-install-perl-m
+		odules-on-mac-os-x-in-4-easy-steps/
+NOTES:
+	- Perl Shell: sudo perl -MCPAN -e shell
+	
+PROCEDURE:
+	1. Install Command Line Tools in Mac OS X (10.8).
+		a. Install XCode 4.4
+		b. Go to XCode -> Preferences -> Downloads.
+		c. Install 'Command Line Tools'
+		d. Download 'CrossPack for AVR Development'.
+		e. Install HomeBrew
+			i. Paste the following command into a terminal.
+				- 'ruby <(curl -fsSk https://raw.github.com/mxcl/
+					homebrew/go)
+		f. Install perl via 'brew install perl'
+		g. Install git via 'brew install git'
+	2. Use 'make' to build an Arduino Project
+		a. Make a github.com account
+		b. Do 'git clone https://github.com/mjoldfield/Arduino-Ma
+			kefile.git'
+		c. Set environment variables for Mac
+			i. do 'sudo vim etc/launchd.conf'
+			ii. add the following lines:
+				a. 'setenv ARDUINO_DIR /Applications/Arduinio.cpp/
+					Contents/Resources/Java'
+				b. 'setenv ARDMK_DIR /usr/local'
+				c. 'setenv ARDUINO_SKETCHBOOK /Users/foo/Documents
+					/Arduino'
+		d. Install Perl Modules
+			NOTE: Perl Shell: 'sudo perl -MCPAN -e shell
+			i. sudo perl -MCPAN -e 'install YAML'
+			ii. sudo perl -MCPAN -e 'Device::SerialPort'
+		
+Now everything should be good to go!
