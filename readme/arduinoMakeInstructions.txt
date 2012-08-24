@@ -1,0 +1,8 @@
+make upload - make the project and upload to board
+make - make the project
+make clean - remove all our dependencies
+make depends - update dependencies
+make reset - reset the Arduino by tickling DTR on the serial port
+make raw_upload - upload without first resetting
+make show_boards - list all the board defined in boards.txt
+make monitor - connect to the Arduino's serial port
