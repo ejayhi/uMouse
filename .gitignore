@@ -12,5 +12,5 @@
 *.a
 
 *.DS_Store
-build-cli/*
+build-cli/
 *.swp
